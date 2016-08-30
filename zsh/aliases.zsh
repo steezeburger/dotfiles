@@ -38,6 +38,7 @@ if [[ $platform == 'linux' ]]; then
 elif [[ $platform == 'darwin' ]]; then
   alias ll='ls -alGh'
   alias ls='ls -Gh'
+  alias l='ls -Gh'
 fi
 
 # show me files matching "ls grep"
@@ -135,7 +136,7 @@ alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
-alias l='less'
+#alias l='ls'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
