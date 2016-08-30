@@ -33,7 +33,9 @@ alias df='df -h'
 alias du='du -h -d 2'
 
 if [[ $platform == 'linux' ]]; then
-  alias ll='ls -alh --color=auto'
+  alias l='ls -h --color=auto'
+  alias ll='ls -lh --color=auto'
+  alias la='ls -ah --color=auto'
   alias ls='ls --color=auto'
 elif [[ $platform == 'darwin' ]]; then
   alias ll='ls -alGh'
@@ -109,7 +111,6 @@ alias gfap='git fetch --all --prune'
 alias gfch='git fetch'
 alias gd='git diff'
 alias gb='git b'
-alias gbd='git b -D -w'
 # Staged and cached are the same thing
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w'
@@ -136,7 +137,11 @@ alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
+<<<<<<< HEAD
 #alias l='ls'
+=======
+#alias l='less'
+>>>>>>> d55260d344d3d66dd9ccc624d8a6005d9efed4a3
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
@@ -181,6 +186,7 @@ alias zrc='zeus rails c'
 alias zrs='zeus rails s'
 alias zrdbm='zeus rake db:migrate'
 alias zrdbtp='zeus rake db:test:prepare'
+alias zzz='rm .zeus.sock; pkill zeus; zeus start'
 
 # Rspec
 alias rs='rspec spec'
@@ -212,3 +218,6 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# Custom - steezeburger
+alias pe='vim $yadr/zsh/0_path.zsh' #path edit
