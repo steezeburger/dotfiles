@@ -138,7 +138,11 @@ alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias less='less -r'
 alias tf='tail -f'
 <<<<<<< HEAD
+<<<<<<< HEAD
 #alias l='ls'
+=======
+#alias l='less'
+>>>>>>> d55260d344d3d66dd9ccc624d8a6005d9efed4a3
 =======
 #alias l='less'
 >>>>>>> d55260d344d3d66dd9ccc624d8a6005d9efed4a3
