@@ -135,4 +135,8 @@
 	template = /Users/js/.stCommitMsg
 [user]
 	email = jessetsnyder@gmail.com
-  name = js
+	name = Jesse Snyder
+[http]
+	postBuffer = 524288000
+[credential]
+	helper = osxkeychain
