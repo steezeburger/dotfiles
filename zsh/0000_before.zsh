@@ -5,3 +5,6 @@ if [ -d $HOME/.zsh.before/ ]; then
     for config_file ($HOME/.zsh.before/*.zsh) source $config_file
   fi
 fi
+
+source ~/.iterm2_shell_integration.zsh
+
