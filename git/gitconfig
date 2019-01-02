@@ -142,3 +142,6 @@
 	postBuffer = 524288000
 [credential]
 	helper = osxkeychain
+[user]
+	name = Jesse Snyder
+	email = jessetsnyder@gmail.com
