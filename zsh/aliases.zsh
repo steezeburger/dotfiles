@@ -37,7 +37,7 @@ if [[ $platform == 'linux' ]]; then
   alias ls='ls --color=auto'
 elif [[ $platform == 'darwin' ]]; then
   alias ll='ls -alGh'
-  alias ls='ls -Gh'
+  alias l='ls -Gh'
 fi
 
 # show me files matching "ls grep"
@@ -134,7 +134,6 @@ alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
-alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
@@ -211,3 +210,7 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
+
+# Custom
+alias kraken='open -a "GitKraken" --args -p $(pwd)'
+alias dcr='docker-compose run --rm'
