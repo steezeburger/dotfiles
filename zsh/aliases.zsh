@@ -137,10 +137,6 @@ alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
-#alias l='ls'
-#alias l='less'
-#alias l='less'
-#alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
@@ -220,3 +216,5 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
 
 # Custom - steezeburger
 alias pe='vim $yadr/zsh/0_path.zsh' #path edit
+alias kraken='open -a "GitKraken" --args -p $(pwd)'
+alias dcr='docker-compose run --rm'
