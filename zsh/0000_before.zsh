@@ -6,5 +6,7 @@ if [ -d $HOME/.zsh.before/ ]; then
   fi
 fi
 
+source ~/.iterm2_shell_integration.zsh
+
 # custom from js
 source $(brew --prefix nvm)/nvm.sh
