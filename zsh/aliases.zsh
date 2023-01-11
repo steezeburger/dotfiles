@@ -71,6 +71,12 @@ alias ve='vim ~/.vimrc'
 # zsh profile editing
 alias ze='vim ~/.zshrc'
 
+# pulumi aliases
+alias pluss='pulumi stack select'
+alias plucg='pulumi config get'
+alias plucs='pulumi config set'
+alias plucss='pulumi config set --secret'
+
 # Git Aliases
 alias gs='git status'
 alias gstsh='git stash'
@@ -110,7 +116,7 @@ alias gfa='git fetch --all'
 alias gfap='git fetch --all --prune'
 alias gfch='git fetch'
 alias gd='git diff'
-alias gb='git b'
+alias gb='git --no-pager b'
 # Staged and cached are the same thing
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w'
@@ -216,5 +222,5 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
 
 # Custom - steezeburger
 alias pe='vim $yadr/zsh/0_path.zsh' #path edit
-alias kraken='open -a "GitKraken" --args -p $(pwd)'
 alias dcr='docker-compose run --rm'
+alias dcp='docker-compose'

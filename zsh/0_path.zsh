@@ -28,3 +28,7 @@ pathAppend "$HOME/.yadr/bin"
 pathAppend "$HOME/.yadr/bin/yadr"
 pathAppend "$HOME/.composer/vendor/bin"
 pathAppend "/usr/local/opt/terraform@0.11/bin"
+
+# pyenv
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
