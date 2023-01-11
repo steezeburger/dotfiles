@@ -68,6 +68,12 @@ alias ve='vim ~/.vimrc'
 # zsh profile editing
 alias ze='vim ~/.zshrc'
 
+# pulumi aliases
+alias pluss='pulumi stack select'
+alias plucg='pulumi config get'
+alias plucs='pulumi config set'
+alias plucss='pulumi config set --secret'
+
 # Git Aliases
 alias gs='git status'
 alias gstsh='git stash'
@@ -107,7 +113,7 @@ alias gfa='git fetch --all'
 alias gfap='git fetch --all --prune'
 alias gfch='git fetch'
 alias gd='git diff'
-alias gb='git b'
+alias gb='git --no-pager b'
 # Staged and cached are the same thing
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w'
@@ -214,3 +220,8 @@ alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew 
 # Custom
 alias kraken='open -a "GitKraken" --args -p $(pwd)'
 alias dcr='docker-compose run --rm'
+alias dcp='docker-compose'
+
+alias prod_dump='pg_dump -C -h trym-prod.cpnf4kcjbucl.us-east-1.rds.amazonaws.com --exclude-table-data=celery_tasks_status_roomstatstaskstatus --exclude-table-data=celery_tasks_status_roomtaskstatus --exclude-table-data=facilities_roomdata --exclude-table-data=celery_tasks_status_utilitybillcalculatortaskstatus -U trymadmin trympostgresql > prod_dump.pg.small.$(date "+%Y-%m-%d %H:%M:%S");'
+alias drop_local_db="psql -h 0.0.0.0 -d trympostgresql -U postgres -W -c  'drop database trympostgresql';psql -h 0.0.0.0 -d trympostgresql -U postgres -W -c  'create database trympostgresql'"
+alias drop_test_db="psql -h 0.0.0.0 -d trympostgresql -U postgres -W -c  'drop database test_trympostgresql'"
