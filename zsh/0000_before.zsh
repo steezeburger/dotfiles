@@ -10,7 +10,7 @@ fi
 # Import SSH key for forwarding
 #
 IDENTITIES=$(ssh-add -L)
-if [ "$IDENTITIES" '==' 'The agent has no identities.' ]; then
+if [ "$IDENTITIES" == 'The agent has no identities.' ]; then
   ssh-add -K ~/.ssh/id_rsa
 fi
 

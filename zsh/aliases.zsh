@@ -33,10 +33,13 @@ alias df='df -h'
 alias du='du -h -d 2'
 
 if [[ $platform == 'linux' ]]; then
-  alias ll='ls -alh --color=auto'
+  alias l='ls -h --color=auto'
+  alias ll='ls -lh --color=auto'
+  alias la='ls -ah --color=auto'
   alias ls='ls --color=auto'
 elif [[ $platform == 'darwin' ]]; then
   alias ll='ls -alGh'
+  alias ls='ls -Gh'
   alias l='ls -Gh'
 fi
 
@@ -215,7 +218,7 @@ alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
-alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
+alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
 
 # Custom
 alias kraken='open -a "GitKraken" --args -p $(pwd)'
