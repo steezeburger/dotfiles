@@ -135,9 +135,6 @@
 	trustExitCode = true
 [commit]
 	template = /Users/js/.stCommitMsg
-[user]
-	email = jessetsnyder@gmail.com
-	name = Jesse Snyder
 [http]
 	postBuffer = 524288000
 [credential]
