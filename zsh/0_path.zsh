@@ -9,11 +9,13 @@ pathAppend() {
 
 pathAppend "$HOME/.yadr/bin"
 pathAppend "$HOME/.yadr/bin/yadr"
-pathAppend "$HOME/.composer/vendor/bin"
-pathAppend "/usr/local/opt/terraform@0.11/bin"
 pathAppend "$HOME/.pyenv"
-pathAppend "$HOME/.rvm/bin"
 pathAppend "$HOME/.cargo/bin"
+
+# NOTE - don't think these are needed anymore. commenting out to improve terminal load time.
+#pathAppend "$HOME/.rvm/bin"
+#pathAppend "$HOME/.composer/vendor/bin"
+#pathAppend "/usr/local/opt/terraform@0.11/bin"
 
 # pyenv
 eval "$(pyenv init --path)"
