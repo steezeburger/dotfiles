@@ -7,7 +7,12 @@ pathAppend() {
   fi
 }
 
-PATH="$PATH:$HOME/.yadr/bin:$HOME/.yadr/bin/yadr:$HOME/.pyenv:$HOME/.yarn/bin:$HOME/.cargo/bin"
+PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH:$HOME/.yadr/bin:$HOME/.yadr/bin/yadr:$HOME/.pyenv:$HOME/.yarn/bin:$HOME/.cargo/bin:/usr/local/go/bin"
+PATH=$PATH:$(go env GOPATH)/bin
+PATH="$PATH:/Users/jessesnyder/.foundry/bin"
+
+# astria scripts that aid with development
+export PATH="$HOME/code/astria/utils:$PATH"
 
 # FIXME - needed?
 #pathAppend "$HOME/.config/yarn/global/node_modules/.bin"
