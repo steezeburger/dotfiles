@@ -130,7 +130,10 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
 alias pe='vim $yadr/zsh/0_path.zsh' #path edit
 alias dcr='docker-compose run --rm'
 alias dcp='docker-compose'
-
+# copy last command to clipboard
+alias lcp='fc -ln -1 | pbcopy'
+# copy current directory to clipboard
+alias cpwd='pwd | pbcopy'
 
 # NOTE - old ruby/rake/gem stuff i don't need anymore
 
