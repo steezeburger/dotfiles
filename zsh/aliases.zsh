@@ -84,6 +84,7 @@ alias gnb='git nb' # new branch aka checkout -b
 # alias gb='git --no-pager b'
 alias gb='git branch'
 alias gd='git diff'
+alias gstash='git stash save -u'
 # commit added files and takes message as next arg, e.g. gcam "fixed a few things"
 alias gcam='git commit -am'
 # git log stuff
@@ -134,6 +135,20 @@ alias dcp='docker-compose'
 alias lcp='fc -ln -1 | pbcopy'
 # copy current directory to clipboard
 alias cpwd='pwd | pbcopy'
+# effectively strips formatting
+alias strpfrm='pbpaste | pbcopy'
+# just alias
+alias j='just'
+alias jt='just test'
+alias jf='just f'
+alias jb='just build'
+alias jl='just lint'
+alias jct='just check-types'
+alias jr='just run'
+alias jp='just prepush'
+# tree - directories only, pass in level wanted
+alias treed='tree -d -L'
+alias tim='setProfileToTim && tim'
 
 # NOTE - old ruby/rake/gem stuff i don't need anymore
 

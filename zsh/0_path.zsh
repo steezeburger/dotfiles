@@ -7,15 +7,21 @@ pathAppend() {
   fi
 }
 
+export VOLTA_HOME="$HOME/.volta"
+
 PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH:$HOME/.yadr/bin:$HOME/.yadr/bin/yadr:$HOME/.pyenv:$HOME/.yarn/bin:$HOME/.cargo/bin:/usr/local/go/bin"
 PATH=$PATH:$(go env GOPATH)/bin
 PATH="$PATH:/Users/jessesnyder/.foundry/bin"
+PATH="$PATH:$VOLTA_HOME/bin"
+PATH="/Applications/RustRover\ 2023.2\ EAP.app/Contents/MacOS":$PATH
+PATH="$PATH:$HOME/.bun/bin"
+PATH=$HOME/.opencode/bin:$PATH
 
 # astria scripts that aid with development
-export PATH="$HOME/code/astria/utils:$PATH"
+PATH="$HOME/code/astria/utils:$PATH"
 
 # FIXME - needed?
 #pathAppend "$HOME/.config/yarn/global/node_modules/.bin"
 
 # Remove duplicate entries from PATH:
-PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
+#PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
